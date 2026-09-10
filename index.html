@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="slate">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roblox Potato Graphics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="mobile-topbar">
+  <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">☰</button>
+  <b style="font-family:'Sora';font-size:14px;">🥔 Roblox Potato Graphics</b>
+</div>
+<div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-mark">🥔</div>
+      <div class="brand-text"><b>Potato Graphics</b><span>for Roblox</span></div>
+    </div>
+    <nav class="nav" id="navList"></nav>
+    <div class="sidebar-foot">
+      <button class="about-link" id="aboutBtn">How this works</button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <section class="page" id="sec-dashboard"></section>
+    <section class="page" id="sec-graphics"></section>
+    <section class="page" id="sec-potato"></section>
+    <section class="page" id="sec-textsize"></section>
+    <section class="page" id="sec-profiles"></section>
+    <section class="page" id="sec-performance"></section>
+    <section class="page" id="sec-optimizer"></section>
+    <section class="page" id="sec-connection"></section>
+    <section class="page" id="sec-history"></section>
+    <section class="page" id="sec-settings"></section>
+  </main>
+</div>
+
+<div class="overlay" id="optimizerOverlay">
+  <div class="overlay-panel">
+    <h3 style="font-size:17px;margin-bottom:4px;">Applying Roblox settings</h3>
+    <p style="font-size:12.5px;color:var(--text-dim);margin:0 0 14px;">Working out your recommended configuration.</p>
+    <div class="overlay-progress"><div id="overlayFill"></div></div>
+    <div id="stageList"></div>
+    <div id="overlayResult" style="display:none;"></div>
+    <div class="modal-actions" style="margin-top:18px;">
+      <button class="btn btn-ghost btn-sm" id="overlaySkip">Skip animation</button>
+      <button class="btn btn-accent btn-sm" id="overlayDone" style="display:none;">Done</button>
+    </div>
+  </div>
+</div>
+
+<div id="modalRoot"></div>
+<div class="toast-root" id="toastRoot"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
